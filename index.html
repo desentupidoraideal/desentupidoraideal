@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Desentupidora Ideal - Atendimento 24h, serviços de desentupimento rápido e eficaz. Ligue agora para emergências!">
+    <meta name="keywords" content="desentupidora, desentupimento, encanamento, emergência, 24 horas, Florianópolis">
+    <title>Desentupidora Ideal - Atendimento 24h | Serviço Rápido e Eficaz</title>
+    
+    <!-- Preload critical resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Critical CSS inline -->
+    <style>
+        /* Critical CSS for above-the-fold content */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 16px;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            color: #ffffff;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            padding: 40px 20px;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(45deg, #00d4ff, #0099cc);
+            border-radius: 20px;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            font-weight: bold;
+            color: white;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            font-size: clamp(28px, 5vw, 42px);
+            margin-bottom: 10px;
+            background: linear-gradient(45deg, #00d4ff, #ffffff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 700;
+        }
+
+        .subtitle {
+            color: #ffeb3b;
+            font-size: clamp(16px, 3vw, 20px);
+            font-weight: 500;
+            margin-bottom: 30px;
+        }
+
+        /* Emergency Section */
+        .emergency {
+            background: linear-gradient(45deg, #ff4757, #ff3742);
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            margin: 30px 0;
+            box-shadow: 0 8px 32px rgba(255, 71, 87, 0.3);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.02); }
+        }
+
+        .emergency h2 {
+            font-size: clamp(20px, 4vw, 28px);
+            margin-bottom: 10px;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Contact Buttons */
+        .contact-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 30px 0;
+        }
+
+        .btn {
+            padding: 15px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.3s ease;
+            min-width: 200px;
+            justify-content: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .btn-whatsapp {
+            background: linear-gradient(45deg, #25d366, #20b358);
+            color: white;
+        }
+
+        .btn-phone {
+            background: linear-gradient(45deg, #ff6b6b, #ff5252);
+            color: white;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 60px 0;
+            background: rgba(255, 255, 255, 0.03);
+        }
+
+        .services h2 {
+            text-align: center;
+            font-size: clamp(24px, 4vw, 32px);
+            margin-bottom: 40px;
+            color: #00d4ff;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .service-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .service-card h3 {
+            color: #ffeb3b;
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
+        .service-card p {
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+
+        /* Benefits Section */
+        .benefits {
+            padding: 60px 0;
+        }
+
+        .benefits h2 {
+            text-align: center;
+            font-size: clamp(24px, 4vw, 32px);
+            margin-bottom: 40px;
+            color: #00d4ff;
+        }
+
+        .benefits-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .benefit-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .benefit-icon {
+            font-size: 24px;
+            color: #00d4ff;
+        }
+
+        .benefit-text {
+            color: #e0e0e0;
+            font-weight: 500;
+        }
+
+        /* CTA Section */
+        .cta {
+            background: linear-gradient(45deg, #4caf50, #45a049);
+            padding: 60px 20px;
+            text-align: center;
+            margin: 40px 0;
+            border-radius: 20px;
+        }
+
+        .cta h2 {
+            font-size: clamp(24px, 4vw, 32px);
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        .cta p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        /* Footer */
+        .footer {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 40px 20px;
+            text-align: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .footer-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .footer h3 {
+            color: #00d4ff;
+            margin-bottom: 20px;
+        }
+
+        .footer p {
+            color: #b0b0b0;
+            margin-bottom: 10px;
+        }
+
+        .footer-nav {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+
+        .footer-nav a {
+            color: #e0e0e0;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-nav a:hover {
+            color: #00d4ff;
+        }
+
+        /* Mobile Optimizations */
+        @media (max-width: 768px) {
+            .contact-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn {
+                width: 100%;
+                max-width: 300px;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .benefits-list {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+
+        /* Performance optimizations */
+        .lazy-load {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s ease;
+        }
+
+        .lazy-load.loaded {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">🔧</div>
+            <h1>Desentupidora Ideal</h1>
+            <p class="subtitle">Atendimento 24 Horas - Serviço Rápido e Eficaz</p>
+            
+            <div class="emergency">
+                <h2>⚠️ EMERGÊNCIA? LIGUE AGORA!</h2>
+                <p>Atendimento imediato para situações urgentes</p>
+            </div>
+            
+            <div class="contact-buttons">
+                <a href="https://wa.me/5548991574479?text=Olá! Preciso de um serviço de desentupimento urgente." class="btn btn-whatsapp" aria-label="Contatar via WhatsApp">
+                    📱 WhatsApp - Conversar agora
+                </a>
+                <a href="tel:+5548991574479" class="btn btn-phone" aria-label="Ligar agora">
+                    📞 Ligar (48) 99157-4479
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="container">
+            <h2>Nossos Serviços Especializados</h2>
+            <p style="text-align: center; color: #e0e0e0; margin-bottom: 40px;">
+                Soluções completas para todos os tipos de entupimento
+            </p>
+            
+            <div class="services-grid">
+                <div class="service-card lazy-load">
+                    <span class="service-icon">🚿</span>
+                    <h3>Desentupimento de Ralos</h3>
+                    <p>Desentupimento rápido e eficaz de ralos de banheiro, cozinha e área de serviço. Equipamentos modernos para resultados garantidos.</p>
+                </div>
+                
+                <div class="service-card lazy-load">
+                    <span class="service-icon">🚽</span>
+                    <h3>Desentupimento de Vasos</h3>
+                    <p>Serviço especializado para vasos sanitários entupidos. Técnicas avançadas que preservam a integridade do sistema.</p>
+                </div>
+                
+                <div class="service-card lazy-load">
+                    <span class="service-icon">🔧</span>
+                    <h3>Desentupimento de Pias</h3>
+                    <p>Solução completa para pias de cozinha e banheiro. Removemos gordura, restos de comida e outros resíduos.</p>
+                </div>
+                
+                <div class="service-card lazy-load">
+                    <span class="service-icon">🏠</span>
+                    <h3>Desentupimento de Canos</h3>
+                    <p>Desentupimento de tubulações residenciais e comerciais. Diagnóstico preciso e solução definitiva.</p>
+                </div>
+                
+                <div class="service-card lazy-load">
+                    <span class="service-icon">🌊</span>
+                    <h3>Desentupimento de Esgoto</h3>
+                    <p>Serviço especializado para redes de esgoto. Equipamentos de alta pressão para desobstrução completa.</p>
+                </div>
+                
+                <div class="service-card lazy-load">
+                    <span class="service-icon">⚡</span>
+                    <h3>Atendimento Emergencial</h3>
+                    <p>Disponível 24 horas para emergências. Resposta rápida e solução imediata para seus problemas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits">
+        <div class="container">
+            <h2>Por Que Escolher a Desentupidora Ideal?</h2>
+            
+            <div class="benefits-list">
+                <div class="benefit-item lazy-load">
+                    <span class="benefit-icon">⏰</span>
+                    <span class="benefit-text">Atendimento 24 horas, 7 dias por semana</span>
+                </div>
+                
+                <div class="benefit-item lazy-load">
+                    <span class="benefit-icon">🚀</span>
+                    <span class="benefit-text">Resposta rápida em até 30 minutos</span>
+                </div>
+                
+                <div class="benefit-item lazy-load">
+                    <span class="benefit-icon">💰</span>
+                    <span class="benefit-text">Preços competitivos e orçamento gratuito</span>
+                </div>
+                
+                <div class="benefit-item lazy-load">
+                    <span class="benefit-icon">🛡️</span>
+                    <span class="benefit-text">Garantia de satisfação 100%</span>
+                </div>
+                
+                <div class="benefit-item lazy-load">
+                    <span class="benefit-icon">👨‍🔧</span>
+                    <span class="benefit-text">Técnicos especializados e experientes</span>
+                </div>
+                
+                <div class="benefit-item lazy-load">
+                    <span class="benefit-icon">🔧</span>
+                    <span class="benefit-text">Equipamentos modernos e eficazes</span>
+                </div>
+                
+                <div class="benefit-item lazy-load">
+                    <span class="benefit-icon">📍</span>
+                    <span class="benefit-text">Atendemos toda a região de Florianópolis</span>
+                </div>
+                
+                <div class="benefit-item lazy-load">
+                    <span class="benefit-icon">💳</span>
+                    <span class="benefit-text">Aceitamos todas as formas de pagamento</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Não Deixe o Problema Piorar!</h2>
+            <p>Entre em contato agora e resolva seu problema de entupimento rapidamente. Orçamento gratuito e atendimento imediato!</p>
+            
+            <div class="contact-buttons">
+                <a href="https://wa.me/5548991574479?text=Olá! Gostaria de solicitar um orçamento para desentupimento." class="btn btn-whatsapp" aria-label="Solicitar orçamento via WhatsApp">
+                    📱 Solicitar Orçamento Grátis
+                </a>
+                <a href="tel:+5548991574479" class="btn btn-phone" aria-label="Ligar para emergência">
+                    📞 Emergência - Ligue Agora
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <h3>Desentupidora Ideal</h3>
+                <p>Sua solução completa em desentupimento</p>
+                <p>Atendimento 24 horas - (48) 99157-4479</p>
+                
+                <nav class="footer-nav">
+                    <a href="#servicos">Serviços</a>
+                    <a href="#sobre">Sobre Nós</a>
+                    <a href="#contato">Contato</a>
+                    <a href="/politica-devolucao.html">Política de Devolução</a>
+                </nav>
+                
+                <p style="margin-top: 30px; color: #888; font-size: 14px;">
+                    &copy; 2024 Desentupidora Ideal. Todos os direitos reservados.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Minimal JavaScript for performance -->
+    <script>
+        // Lazy loading animation
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('loaded');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        // Observe all lazy-load elements
+        document.addEventListener('DOMContentLoaded', () => {
+            const lazyElements = document.querySelectorAll('.lazy-load');
+            lazyElements.forEach(el => observer.observe(el));
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Preload critical resources
+        const preloadLink = document.createElement('link');
+        preloadLink.rel = 'preload';
+        preloadLink.as = 'style';
+        preloadLink.href = 'data:text/css,';
+        document.head.appendChild(preloadLink);
+    </script>
+
+    <!-- Schema.org structured data for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Desentupidora Ideal",
+        "description": "Serviços de desentupimento 24 horas em Florianópolis. Atendimento rápido e eficaz para emergências.",
+        "telephone": "+55-48-99157-4479",
+        "url": "https://desentupidoraideal.pages.dev",
+        "serviceArea": {
+            "@type": "City",
+            "name": "Florianópolis"
+        },
+        "openingHours": "Mo-Su 00:00-23:59",
+        "priceRange": "$$",
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Serviços de Desentupimento",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Desentupimento de Ralos"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Desentupimento de Vasos Sanitários"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Desentupimento de Pias"
+                    }
+                }
+            ]
+        }
+    }
+    </script>
+</body>
+</html>
+
